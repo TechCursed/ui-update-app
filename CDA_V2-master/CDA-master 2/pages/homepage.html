@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <title>CDA</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/templatemo-digimedia-v3.css">
+    <link rel="stylesheet" href="../css/animated.css">
+    <link rel="stylesheet" href="../css/owl.css">
+    <!--TemplateMo 568 DigiMediahttps://templatemo.com/tm-568-digimedia-->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script> -->
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/startmin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top my-custom-navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/wipro-white-edited.webp" width="80" height="60" class="d-inline-block align-top" alt="">
+                </a>
+                <a class="navbar-brand" href="index.html" style="color: white; margin-bottom: 30px;">
+                    <h3 class="navbar-heading-cda">
+                        Conversational Data Analyser</Data></Data><span
+                            style="font-size: 1.2rem; margin-left: 10px"
+                        >Powered by Intel® Core™ Ultra Processor</span>
+                    </h3>
+                </a>
+    
+                 <!-- Dropdown for avatar -->
+                 
+                <!-- <ul class="nav navbar-right navbar-top-links">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img src="https://wiprodemo4.service-now.com/x_wipli_hrtest.avatar_employee.jpg" class="rounded-circle dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="height: 60px; width: 60px; cursor: pointer; margin-right: 10px; border-radius: 50%;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul> -->
+    
+            </div>
+        </nav>
+    
+        <!-- /.sidebar -->
+        <aside class="sidebar navbar-default" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...." style="height: 34px;">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="homepage.html" class="active"><i class="fa fa-home fa-fw"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="active"><i class="fa fa-upload fa-fw"></i>Upload Data</a>
+                    </li>
+                        <li>
+                            <a href="dataWizard.html" class="active"><i class="fa fa-tasks fa-fw"></i>Data Insights</a>
+                        </li>
+    
+                       
+                        <li>
+                            <a href="login.html" class="active"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                        </li>
+                </ul>
+            </div>
+        </aside>
+
+       
+        <div id="js-preloader" class="js-preloader">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-wrapper">
+        <div id="row">
+        <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6>Conversational Data Analyser</h6>
+                                        <h2>Unlock Insights From Your Data, Just By Asking.</h2>
+                                        <p>CDA - Conversational Data Analyzer is an AI-powered tool that lets you analyze data using simple, everyday language. No need for complex SQL queries - just ask your questions and get instant answers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                               <video autoplay muted loop playinline>
+                                    <source src="../assets/36uFB6B6Utzsz2d9zC.mp4" type="video/mp4">
+                               </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                               <video autoplay muted loop playinline>
+                                <source src="../assets/0x2w5K5fsqM9M0sxfH.mp4" type="video/mp4">
+
+                               </video>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="about-right-content">
+                                <div class="section-heading">
+                                    <h6>CDA: Your Data, Your Language</h6>
+                                    <h4>Easy, Powerful, and Secure Data Analysis</h4>
+                                    <div class="line-dec"></div>
+                                </div>
+                                <p>CDA simplifies data analysis by allowing you to interact with your data in your natural language. Upload your CSV or XLS files, ask your questions, and get instant visualizations and insights. CDA handles the data cleaning, SQL query generation, and presentation, so you can focus on what matters most - understanding your data.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services" class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h6>CDA Features</h6>
+                        <h4>What Makes CDA <em>Powerful</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="naccs">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="menu">
+                                        <div class="first-thumb active">
+                                            <div class="thumb">
+                                                <span class="icon"><img src="../assets/upload (1).png" alt=""></span>
+                                                Upload & Clean
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="../assets/analytics.png" alt=""></span>
+                                                Ask & Analyze
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="../assets/visualization-icon.png" alt=""></span>
+                                                Visualize & Explore
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="../assets/share (1).png" alt=""></span>
+                                                Share & Collaborate
+                                            </div>
+                                        </div>
+                                        <div class="last-thumb">
+                                            <div class="thumb">
+                                                <span class="icon"><img src="../assets/security.png" alt=""></span>
+                                                Secure & Reliable 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-12">
+                                    <ul class="nacc">
+                                        <li class="active">
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Seamless Data Upload and Cleaning</h4>
+                                                                <p>CDA makes it easy to get started. Upload your data in CSV or XLS format, and CDA automatically handles data cleaning and preparation, removing null values and ensuring data integrity.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="../assets/upload_large.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Ask Questions in Natural Language</h4>
+                                                                <p>Interact with your data using simple, everyday language. CDA's powerful NLP engine understands your questions and generates the required SQL queries behind the scenes.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="../assets/services-image-02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Visualize & Explore Your Data</h4>
+                                                                <p>Gain instant insights with CDA's dynamic data visualization capabilities. Explore trends, patterns, and relationships through interactive charts and graphs.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="../assets/visualization.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Share & Collaborate with Ease</h4>
+                                                                <p>CDA makes it simple to share your findings with others.  Easily export charts, reports, and insights to collaborate with colleagues and stakeholders. </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="../assets/services-image-04.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Secure and Reliable Analysis</h4>
+                                                                <p>Your data is safe with CDA.  We prioritize data security and privacy, ensuring your information is protected at every step.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="../assets/data_security.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="our-portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6>Use Cases</h6>
+                        <h4>See CDA in <em>Action</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="loop owl-carousel">
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="../assets/sales trend analysis.jpeg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Sales Trend Analysis</h4>
+                                        <span>Ask "What are the top selling products?"</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="../assets/customer churn prediction.jpeg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Customer Churn Prediction</h4>
+                                        <span>Ask "Which customers are likely to churn?"</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="../assets/Inventory Prediction.jpeg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Inventory Optimization</h4>
+                                        <span>Ask "How can we optimize our inventory levels?"</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="../assets/Marketing Campaign analysis.jpeg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Marketing Campaign Analysis</h4>
+                                        <span>Ask "Which marketing campaigns are most effective?" </span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="../assets/Financial Forcasting.jpeg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <h4>Financial Forecasting</h4>
+                                        <span>Ask "What is the projected revenue for next quarter?"</span>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+        </div>
+
+        </div>
+
+        <div class="bottoms">
+            <div class="bottoms-content">
+                <p>© 2024 Wipro Ltd. All rights reserved.
+                </p>
+            </div>
+            <div class="bottoms-content">
+                <p>Powered by Generative AI</p>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+    
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/owl-carousel.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/imagesloaded.js"></script>
+    <script src="../js/custom.js"></script>
+
+      <!-- jQuery -->
+      <script src="../js/jquery.min.js"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="../js/bootstrap.min.js"></script>
+
+      <!-- Metis Menu Plugin JavaScript -->
+      <script src="../js/metisMenu.min.js"></script>
+
+      <!-- Morris Charts JavaScript -->
+      <!-- <script src="../js/raphael.min.js"></script>
+      <script src="../js/morris.min.js"></script>
+      <script src="../js/morris-data.js"></script> -->
+
+      <!-- Custom Theme JavaScript -->
+      <script src="../js/startmin.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+
+
+
+</html>

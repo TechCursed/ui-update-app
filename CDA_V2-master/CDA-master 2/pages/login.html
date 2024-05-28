@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/startmin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>Login Page</title>
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-image: url('../images/cyber.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+            opacity: 0.85;
+        }
+
+        p {
+            line-height: 155%;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #000;
+            opacity: 0.65;
+            font-weight: bold;
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            padding: 60px 40px;
+            width: 600px;
+            position: absolute;
+            left: 5%;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px; /* Add margin to the bottom of the form */
+        }
+
+        .icon {
+            position: absolute;
+            top: -16px;
+            left: 70px;
+            height: 56px;
+            width: 44px;
+            display: flex;
+        }
+
+        button {
+            width: auto;
+            min-width: 100px;
+            text-align: center;
+            padding: 10px 30px;
+            margin-top: 5px;
+            background-color: #525CEB;
+            color: #fff;
+            font-size: 14px;
+            margin-left: auto;
+            font-weight: 500;
+            box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.13);
+            border: none;
+            transition: all 0.3s ease;
+            outline: 0;
+            border-radius: 24px;
+        }
+
+        input {
+            padding: 20px 0 20px 20px;
+            height: 56px;
+            border: none;
+            font-size: 20px;
+            background: #fff;
+            width: 280px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: 400;
+            -webkit-appearance: none;
+        }
+
+        .floating-label {
+            position: relative;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .discrete {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+            border-bottom: solid 1px rgba(0, 0, 0, 0);
+            padding-bottom: 4px;
+            margin-left: auto;
+            font-weight: 300;
+            transition: all 0.3s ease;
+            margin-top: 40px;
+        }
+
+        .discrete:hover {
+            border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .session {
+            margin-top: 100px;
+        }
+
+        .bottoms {
+            display: flex;
+            justify-content: space-between;
+            background-color: #3279B7;
+            color: white;
+            /* padding: 10px 20px; */
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* margin-top: 40px; */
+        }
+
+        .bottoms-content {
+            padding-left: 50px;
+            padding-right: 50px;
+            /* padding-top: 10px; */
+            padding-bottom: 0;
+        }
+
+        a{
+          color: white;
+          style: none;
+        }
+
+        a:hover{
+          color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top my-custom-navbar" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/wipro-white-edited.webp" width="80" height="60" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-brand" href="index.html" style="color: white; margin-bottom: 30px;"><h3 class="text-white mb-0">
+              Conversational Data Analyser<span
+                style="font-size: 1.2rem; margin-left: 10px"
+                >Powered by Intel® Core™ Ultra Processor</span></h3>
+            </h3></a>
+        </div>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <ul class="nav navbar-nav navbar-left navbar-top-links">
+        </ul>
+        <!-- /.navbar-top-links -->
+    </nav>
+
+    <div class="session">
+        <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 302.5">
+                <style>
+                    .st01 {
+                        fill: #fff;
+                    }
+
+                </style>
+                <path class="st01"
+                    d="m126 302.2c-2.3 0.7-5.7 0.2-7.7-1.2l-105-71.6c-2-1.3-3.7-4.4-3.9-6.7l-9.4-126.7c-0.2-2.4 1.1-5.6 2.8-7.2l93.2-86.4c1.7-1.6 5.1-2.6 7.4-2.3l125.6 18.9c2.3 0.4 5.2 2.3 6.4 4.4l63.5 110.1c1.2 2 1.4 5.5 0.6 7.7l-46.4 118.3c-0.9 2.2-3.4 4.6-5.7 5.3l-121.4 37.4zm63.4-102.7c2.3-0.7 4.8-3.1 5.7-5.3l19.9-50.8c0.9-2.2 0.6-5.7-0.6-7.7l-27.3-47.3c-1.2-2-4.1-4-6.4-4.4l-53.9-8c-2.3-0.4-5.7 0.7-7.4 2.3l-40 37.1c-1.7 1.6-3 4.9-2.8 7.2l4.1 54.4c0.2 2.4 1.9 5.4 3.9 6.7l45.1 30.8c2 1.3 5.4 1.9 7.7 1.2l52-16.2z" />
+            </svg>
+        </div>
+        <form action="" class="log-in" autocomplete="off">
+            <h4>Welcome to <span>CDA</span>!</h4>
+            <p>Unlock the power of your data with our Data Analyzer. Dive into insightful chats or visualize trends with dynamic graphs upon login.</p>
+            <div class="floating-label">
+                <input placeholder="  Username" type="email" name="email" id="email" autocomplete="off">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <style>
+                            .st0 {
+                                fill: none;
+                            }
+
+                        </style>
+                        <g transform="translate(0 -952.36)">
+                            <path d="m17.5 977c-1.3 0-2.4 1.1-2.4 2.4v45.9c0 1.3 1.1 2.4 2.4 2.4h64.9c1.3 0 2.4-1.1 2.4-2.4v-45.9c0-1.3-1.1-2.4-2.4-2.4h-64.9zm2.4 4.8h60.2v1.2l-30.1 22-30.1-22v-1.2zm0 7l28.7 21c0.8 0.6 2 0.6 2.8 0l28.7-21v34.1h-60.2v-34.1z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="floating-label">
+                <input placeholder="  Password" type="password" name="password" id="password" autocomplete="off">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <style>
+                            .st0 {
+                                fill: none;
+                            }
+
+                            .st1 {
+                                fill: #010101;
+                            }
+
+                        </style>
+                        <rect class="st0" width="24" height="24" />
+                        <path class="st1"
+                            d="M19,21H5V9h14V21z M6,20h12V10H6V20z" />
+                        <path class="st1"
+                            d="M16.5,10h-1V7c0-1.9-1.6-3.5-3.5-3.5S8.5,5.1,8.5,7v3h-1V7c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5V10z" />
+                        <path class="st1"
+                            d="m12 16.5c-0.8 0-1.5-0.7-1.5-1.5s0.7-1.5 1.5-1.5 1.5 0.7 1.5 1.5-0.7 1.5-1.5 1.5zm0-2c-0.3 0-0.5 0.2-0.5 0.5s0.2 0.5 0.5 0.5 0.5-0.2 0.5-0.5-0.2-0.5-0.5-0.5z" />
+                    </svg>
+                </div>
+            </div>
+        <button type="button" onClick="redirectToIndex()">Log in</button>
+
+        <script>
+        function redirectToIndex() {
+          window.location.href = 'index.html'; 
+        }
+        </script>        
+        <a href="" class="discrete" target="_blank">Forgot Password?</a>
+          </form>
+    </div>
+
+    <div class="bottoms">
+        <div class="bottoms-content"> &copy; 2024 Wipro Ltd. All rights reserved.</div>
+        <div class="bottoms-content">Powered by Generative AI</div>
+    </div>
+</body>
+
+</html>
